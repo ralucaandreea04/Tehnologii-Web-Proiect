@@ -443,7 +443,6 @@
                                 ultimele imagini de la SAG Awards și informații despre ultimele persoane căutate.</li>
                             <li class="pictures" style="list-style: none"><img alt="overview" src="homePage1.png"
                                     width=800> <img alt="overview" src="homePage2.png" width=800>
-                            
                             </li>
                         </ul>
                     </li>
@@ -452,7 +451,6 @@
                     <li style="list-style: none">
                         <ul>
                             <li>Pagina are rolul de a prezenta câteva informații despre SAG Awards.</li>
-                            </li>
                             <li class="pictures" style="list-style: none"><img alt="overview" src="aboutPoza.png"
                                     width=800>
                             </li>
