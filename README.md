@@ -261,7 +261,7 @@
                     apăsarea butonului de <b>Adaugă la favorite</b> și
                     de a le vizualiza ulterior în secțiunea
                     <b>Favorite</b>.
-
+                </p>
             </section>
             <section id="references">
                 <h4>1.5 Bibliografie</h4>
