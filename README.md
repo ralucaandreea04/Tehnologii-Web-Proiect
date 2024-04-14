@@ -1,4 +1,3 @@
-# Tehnologii-Web-Proiect
 <!DOCTYPE html>
 <html lang="ro">
    <head>
