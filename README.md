@@ -498,7 +498,7 @@
                         browser funcțional,
                         compatibil cu HTML, 
                         CSS și
-                        cu PHP.Aplicația web 
+                        cu PHP. Aplicația web 
                         AcVis are o interfață 
                         grafică intuitivă și
                         ușor de folosit, care
