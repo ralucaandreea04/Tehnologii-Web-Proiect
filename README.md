@@ -496,9 +496,20 @@
                         Cerințele minime de
                         software includ un
                         browser funcțional,
-                        compatibil cu HTML
-                        și
-                        cu PHP.
+                        compatibil cu HTML, 
+                        CSS și
+                        cu PHP.Aplicația web 
+                        AcVis are o interfață 
+                        grafică intuitivă și
+                        ușor de folosit, care
+                        ajută un utilizator 
+                        neprofesionist să
+                        primească informații
+                        despre actorii preferați
+                        prin aplicarea mai multor 
+                        filtre în raport cu
+                        nominalizările lor la SAG 
+                        AWARDS.
                 </section>
                 <section id="communication-interface">
                     <h4>3.4 Interfața de
