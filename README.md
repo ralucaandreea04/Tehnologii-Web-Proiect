@@ -263,8 +263,6 @@
                 Fiecare utilizator va avea acces la urmatoarele
                 funcționălități:
                 <ul>
-                    <li>să se înregistreze pe site;</li>
-                    <li>să se autentifice pe site;</li>
                     <li>să consulte pagină "Home" și noutățile
                         disponibile;</li>
                     <li>să acceseze câștigătorii ultimului an
@@ -277,12 +275,6 @@
                     <li>să acceseze pagina "About" pentru a
                         accesa
                         scurtă descriere a paginii web;</li>
-                    <li>dacă este <b>autentificat</b>, poate
-                        să-și adauge la Favorite actorii
-                        preferați;</li>
-                    <li>dacă este <b>autentificat</b>, să își
-                        acceseze profilul și să vizualizeze
-                        activitatea;</li>
                     <li>dacă utilizatorul are rol de
                         <b>admin</b>,
                         acesta poate șterge utilizatori din baza
