@@ -546,7 +546,7 @@
                        ale actorilor.</li>
                         <li>Secțiunea de ultimii actori
                         căutați: Pentru vizualizarea actorilor 
-                        virași în rândul utilizatorilor.
+                        virali în rândul utilizatorilor.
                         </li>
                         </ul>
                     </p>
