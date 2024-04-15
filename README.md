@@ -584,7 +584,7 @@
                                 a-și
                                 modifica
                                 credențialele
-                                utilizatorul,
+                                administratorul,
                                 trebuie
                                 să
                                 fie
@@ -594,7 +594,7 @@
                                 Pentru a
                                 se
                                 autentifica,
-                                utilizatorul
+                                administratorul
                                 are
                                 nevoie
                                 de un
