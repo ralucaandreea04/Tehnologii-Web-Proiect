@@ -299,7 +299,6 @@
                 <h5>2.3.1 Utilizator principal</h5>
                 <ul>
                     <li>utilizatorii pot fi:</li>
-                    <li style="list-style: none">
                         <ul>
                             <li>orice categorie de oameni care
                                 doresc să afle informații despre
@@ -308,7 +307,6 @@
                                 preferați;
                             </li>
                         </ul>
-                    </li>
                 </ul>
                 <h5>2.3.2 Caracteristici</h5>
                 <ul>
