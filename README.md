@@ -397,13 +397,6 @@
                                         acționeze butonul
                                         <b>Submit</b>.
                                     </li>
-                                    <li> În cazul în care utilizatorul nu are
-                                        cont pe site, acesta își
-                                        poate crea unul prin accesarea pagini de
-                                        înregistrare, ce se face prin
-                                        apăsarea butonului <b>Create an
-                                            account</b>.
-                                    </li>
                                     <li class="pictures"
                                         style="list-style: none"><img
                                             alt="login"
