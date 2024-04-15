@@ -320,9 +320,6 @@
                             <li> prin intermediul meniului lateral, utilizatorii vor putea vizualiza informații specifice despre o anumită categorie, an sau actor.</li>
                         </ul>
                     </li>
-                    <li>Utilizatorii care nu sunt autentificați vor avea acces doar la pagina "Home" și "About", iar încercarea de a căuta un actor sau de a 
-                        vedea informații despre o anumite categorie, an sau film va duce la o atenționare și ulterior la pagina de autentificare.</li>
-                    </li>
                     </li>
                 </ul>
             </section>
