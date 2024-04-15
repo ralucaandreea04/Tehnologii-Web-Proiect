@@ -525,6 +525,30 @@
                         va fi utilizat
                         este
                         HTTP.
+                        Interfața de comunicare
+                        a aplicației AcVis include 
+                        mai multe funcționalități care 
+                        permit utilizatorilor să afle
+                        știri și informații despre
+                        actorii preferați:
+                        <ul>
+                       <li>Bara de căutare: Permite 
+                           vizualizarea informațiilor după 
+                           numele actorului.</li>
+
+                       <li>Profilurile actorilor: Când un
+                       actor este selectat din baza de date,
+                       se deschide pagina profilului său.</li>
+
+                       <li>Filtre de căutare: În partea stângă 
+                       a paginii HOME se află un slide menu care
+                       permite filtrarea după anumite criterii 
+                       ale actorilor.</li>
+
+                        <li>Secțiunea de ultimii actori
+                        căutați: Pentru vizualizarea actorilor 
+                        virași în rândul utilizatorilor.</li>
+                      </ul>
                     </p>
                 </section>
                 <section id="system-features">
