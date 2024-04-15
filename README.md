@@ -534,21 +534,21 @@
                         <ul>
                        <li>Bara de căutare: Permite 
                            vizualizarea informațiilor după 
-                           numele actorului.</li>
-
-                       <li>Profilurile actorilor: Când un
+                           numele actorului.
+                       </li>
+                             <li>Profilurile actorilor: Când un
                        actor este selectat din baza de date,
-                       se deschide pagina profilului său.</li>
-
+                       se deschide pagina profilului său.
+                             </li>
                        <li>Filtre de căutare: În partea stângă 
                        a paginii HOME se află un slide menu care
                        permite filtrarea după anumite criterii 
                        ale actorilor.</li>
-
                         <li>Secțiunea de ultimii actori
                         căutați: Pentru vizualizarea actorilor 
-                        virași în rândul utilizatorilor.</li>
-                      </ul>
+                        virași în rândul utilizatorilor.
+                        </li>
+                        </ul>
                     </p>
                 </section>
                 <section id="system-features">
