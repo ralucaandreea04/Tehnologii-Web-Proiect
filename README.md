@@ -232,12 +232,10 @@
                     Scopul aplicației este de a oferi utilizatorilor o
                     sursă de informații despre actori, filme, seriale,
                     dar și despre premiile și nominalizările acestora.
-                    Prin crearea unui cont, utilizatorii vor avea
-                    oportunitatea de a-și crea propria listă cu actorii
-                    preferați prin
-                    apăsarea butonului de <b>Adaugă la favorite</b> și
-                    de a le vizualiza ulterior în secțiunea
-                    <b>Favorite</b>.
+                    Utilizatorii nu vor primi informatii personalizate
+                    in functie de istoric deoarece nu vor avea cont,
+                    de fiecare data cand vor intra pe pagina vor fi
+                    priviti ca utilizatori noi.
                 </p>
             </section>
             <section id="references">
