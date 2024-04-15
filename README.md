@@ -876,54 +876,28 @@
                     <section id="other">
                         <h4>4.5 Alte
                             funcționalități</h4>
-                        <h5 id="other-1">4.6.1
-                            Descriere și
-                            generalități</h5>
-                        In cadrul
-                        feed-ului
-                        RSS, pot fi
-                        văzute
-                        doua clasamente
-                        ce
-                        tin evidenta
-                        celor
-                        mai harnici
-                        utilizatori
-                        de pe site.
-                        <h5 id="other-2">4.5.2
+                        <h5 id="other-2">4.5.1
                             Actualizarea
                             informațiilor</h5>
                         <ol>
                             <li>
-                                Datele
-                                care
-                                sunt
-                                folosite
-                                in
-                                fluxul
-                                RSS
-                                sunt
-                                extrase
-                                pe baza
-                                unui
-                                camp
-                                actualizat
-                                permanent
-                                din baza
-                                de
-                                date.
+                                Sectiune din pagina de Home,
+                                care ilustreaza ultimii actori 
+                                vizualizati este actualizata
+                                periodic.
                             </li>
                         </ol>
-                        <h5 id="other-3">4.5.3
+                        <h5 id="other-3">4.5.2
                             Cerințe de
                             funcționare</h5>
                         <ul>
                             <li>
-                                Utilizatorul
-                                trebuie
-                                să
-                                fie
-                                autentificat.
+                                Utilizatorul nu trebuie să fie 
+                                autentificat, informațiile și
+                                statisticile sunt disponibile
+                                oricărui utilizator cu o conexiune
+                                la internet și un browser compatibil 
+                                cu aplicația.
                             </li>
                         </ul>
                     </section>
