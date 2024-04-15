@@ -232,12 +232,10 @@
                     Scopul aplicației este de a oferi utilizatorilor o
                     sursă de informații despre actori, filme, seriale,
                     dar și despre premiile și nominalizările acestora.
-                    Prin crearea unui cont, utilizatorii vor avea
-                    oportunitatea de a-și crea propria listă cu actorii
-                    preferați prin
-                    apăsarea butonului de <b>Adaugă la favorite</b> și
-                    de a le vizualiza ulterior în secțiunea
-                    <b>Favorite</b>.
+                    Utilizatorii nu vor primi informatii personalizate
+                    in functie de istoric deoarece nu vor avea cont,
+                    de fiecare data cand vor intra pe pagina vor fi
+                    priviti ca utilizatori noi.
                 </p>
             </section>
             <section id="references">
@@ -265,8 +263,6 @@
                 Fiecare utilizator va avea acces la urmatoarele
                 funcționălități:
                 <ul>
-                    <li>să se înregistreze pe site;</li>
-                    <li>să se autentifice pe site;</li>
                     <li>să consulte pagină "Home" și noutățile
                         disponibile;</li>
                     <li>să acceseze câștigătorii ultimului an
@@ -279,12 +275,6 @@
                     <li>să acceseze pagina "About" pentru a
                         accesa
                         scurtă descriere a paginii web;</li>
-                    <li>dacă este <b>autentificat</b>, poate
-                        să-și adauge la Favorite actorii
-                        preferați;</li>
-                    <li>dacă este <b>autentificat</b>, să își
-                        acceseze profilul și să vizualizeze
-                        activitatea;</li>
                     <li>dacă utilizatorul are rol de
                         <b>admin</b>,
                         acesta poate șterge utilizatori din baza
@@ -308,8 +298,7 @@
                     utilizatorilor</h4>
                 <h5>2.3.1 Utilizator principal</h5>
                 <ul>
-                    <li>utilizatorii autentificați pot fi:</li>
-                    <li style="list-style: none">
+                    <li>utilizatorii pot fi:</li>
                         <ul>
                             <li>orice categorie de oameni care
                                 doresc să afle informații despre
@@ -318,30 +307,16 @@
                                 preferați;
                             </li>
                         </ul>
-                    </li>
-                    <li>
-                        utilizatorii neautentificați pot fi:
-                        <ul>
-                            <li>persoane care doresc să afle
-                                informații generale despre SAG
-                                Awards.
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
                 <h5>2.3.2 Caracteristici</h5>
                 <ul>
-                    <li>Utilizatorii care sunt <b> autentificați
-                        </b> pot să acceseze toate paginile aplicației web cum ar fi:
+                    <li>Utilizatorii pot să acceseze toate paginile aplicației web cum ar fi:
                         <ul>
                             <li> pagina "Home" unde poate vedea o galerie foto de la ultima ediție a premiile SAG și informații despre ultimele persoane căutate;</li>
                             <li> pagina "About" care oferă informații despre SAG Awards;</li>
                             <li> pagina "Login" unde se poate autentifica în contul său pentru a vizualiza cele mai recente actualizări ale actorilor preferați;</li>
                             <li> prin intermediul meniului lateral, utilizatorii vor putea vizualiza informații specifice despre o anumită categorie, an sau actor.</li>
                         </ul>
-                    </li>
-                    <li>Utilizatorii care nu sunt autentificați vor avea acces doar la pagina "Home" și "About", iar încercarea de a căuta un actor sau de a 
-                        vedea informații despre o anumite categorie, an sau film va duce la o atenționare și ulterior la pagina de autentificare.</li>
                     </li>
                     </li>
                 </ul>
@@ -394,8 +369,8 @@
                             autentificare</b></li>
                     <li style="list-style: none">
                         <ul>
-                            <li>Pagina are rolul de a realiza autentificarea utilizatorilor la AcVis.</li>
-                            <li>Pentru a se autentifica, utilizatorul trebuie să completeze câmpurile de "email address" și "password" cu
+                            <li>Pagina are rolul de a realiza autentificarea administratorilor la AcVis.</li>
+                            <li>Pentru a se autentifica, administratorul trebuie să completeze câmpurile de "email address" și "password" cu
                                 credențiale <b>valide</b>, urmând să acționeze butonul
                                 <b>Submit</b>.
                             </li>
@@ -456,21 +431,6 @@
                             </li>
                         </ul>
                     </li>
-                    <li id="profile"><b>Pagina de profil</b></li>
-                    <li style="list-style: none">
-                        <ul>
-                            <li>Pagina prezintă informații despre utilizator.</li>
-                            <li>Utilizatorul
-                                <b>autentificat</b> își va vedea la profil detalii despre cont,
-                                activitatea sa și lista cu actorii favoriți.
-                            </li>
-                            <li>Mai mult, utilizatorul va avea la dispoziție un buton <b>Logout</b>
-                                prin care poate ieși din cont, dar is unul
-                                <b>Change Password</b>,
-                                în cazul în care își dorește acest lucru.
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
                 <section id="hardware-interface">
                     <h4>3.2 Interfața
@@ -496,9 +456,20 @@
                         Cerințele minime de
                         software includ un
                         browser funcțional,
-                        compatibil cu HTML
-                        și
-                        cu PHP.
+                        compatibil cu HTML, 
+                        CSS și
+                        cu PHP. Aplicația web 
+                        AcVis are o interfață 
+                        grafică intuitivă și
+                        ușor de folosit, care
+                        ajută un utilizator 
+                        neprofesionist să
+                        primească informații
+                        despre actorii preferați
+                        prin aplicarea mai multor 
+                        filtre în raport cu
+                        nominalizările lor la SAG 
+                        AWARDS.
                 </section>
                 <section id="communication-interface">
                     <h4>3.4 Interfața de
@@ -514,6 +485,30 @@
                         va fi utilizat
                         este
                         HTTP.
+                        Interfața de comunicare
+                        a aplicației AcVis include 
+                        mai multe funcționalități care 
+                        permit utilizatorilor să afle
+                        știri și informații despre
+                        actorii preferați:
+                        <ul>
+                       <li>Bara de căutare: Permite 
+                           vizualizarea informațiilor după 
+                           numele actorului.
+                       </li>
+                             <li>Profilurile actorilor: Când un
+                       actor este selectat din baza de date,
+                       se deschide pagina profilului său.
+                             </li>
+                       <li>Filtre de căutare: În partea stângă 
+                       a paginii HOME se află un slide menu care
+                       permite filtrarea după anumite criterii 
+                       ale actorilor.</li>
+                        <li>Secțiunea de ultimii actori
+                        căutați: Pentru vizualizarea actorilor 
+                        virali în rândul utilizatorilor.
+                        </li>
+                        </ul>
                     </p>
                 </section>
                 <section id="system-features">
@@ -589,7 +584,7 @@
                                 a-și
                                 modifica
                                 credențialele
-                                utilizatorul,
+                                administratorul,
                                 trebuie
                                 să
                                 fie
@@ -599,7 +594,7 @@
                                 Pentru a
                                 se
                                 autentifica,
-                                utilizatorul
+                                administratorul
                                 are
                                 nevoie
                                 de un
@@ -841,54 +836,28 @@
                     <section id="other">
                         <h4>4.5 Alte
                             funcționalități</h4>
-                        <h5 id="other-1">4.6.1
-                            Descriere și
-                            generalități</h5>
-                        In cadrul
-                        feed-ului
-                        RSS, pot fi
-                        văzute
-                        doua clasamente
-                        ce
-                        tin evidenta
-                        celor
-                        mai harnici
-                        utilizatori
-                        de pe site.
-                        <h5 id="other-2">4.5.2
+                        <h5 id="other-2">4.5.1
                             Actualizarea
                             informațiilor</h5>
                         <ol>
                             <li>
-                                Datele
-                                care
-                                sunt
-                                folosite
-                                in
-                                fluxul
-                                RSS
-                                sunt
-                                extrase
-                                pe baza
-                                unui
-                                camp
-                                actualizat
-                                permanent
-                                din baza
-                                de
-                                date.
+                                Sectiune din pagina de Home,
+                                care ilustreaza ultimii actori 
+                                vizualizati este actualizata
+                                periodic.
                             </li>
                         </ol>
-                        <h5 id="other-3">4.5.3
+                        <h5 id="other-3">4.5.2
                             Cerințe de
                             funcționare</h5>
                         <ul>
                             <li>
-                                Utilizatorul
-                                trebuie
-                                să
-                                fie
-                                autentificat.
+                                Utilizatorul nu trebuie să fie 
+                                autentificat, informațiile și
+                                statisticile sunt disponibile
+                                oricărui utilizator cu o conexiune
+                                la internet și un browser compatibil 
+                                cu aplicația.
                             </li>
                         </ul>
                     </section>
