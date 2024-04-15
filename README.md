@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="ro">
-
     <head>
         <meta charset="UTF-8">
         <title>Documentație</title>
     </head>
-
     <body>
         <article>
             <header>
@@ -973,5 +971,4 @@
                     </section>
                 </article>
             </body>
-
         </html>
