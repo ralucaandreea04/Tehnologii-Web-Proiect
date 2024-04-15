@@ -369,8 +369,8 @@
                             autentificare</b></li>
                     <li style="list-style: none">
                         <ul>
-                            <li>Pagina are rolul de a realiza autentificarea utilizatorilor la AcVis.</li>
-                            <li>Pentru a se autentifica, utilizatorul trebuie să completeze câmpurile de "email address" și "password" cu
+                            <li>Pagina are rolul de a realiza autentificarea administratorilor la AcVis.</li>
+                            <li>Pentru a se autentifica, administratorul trebuie să completeze câmpurile de "email address" și "password" cu
                                 credențiale <b>valide</b>, urmând să acționeze butonul
                                 <b>Submit</b>.
                             </li>
@@ -428,21 +428,6 @@
                             <li>Pagina are rolul de a prezenta câteva informații despre SAG Awards.</li>
                             <li class="pictures" style="list-style: none"><img alt="overview" src="aboutPoza.png"
                                     width=800>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="profile"><b>Pagina de profil</b></li>
-                    <li style="list-style: none">
-                        <ul>
-                            <li>Pagina prezintă informații despre utilizator.</li>
-                            <li>Utilizatorul
-                                <b>autentificat</b> își va vedea la profil detalii despre cont,
-                                activitatea sa și lista cu actorii favoriți.
-                            </li>
-                            <li>Mai mult, utilizatorul va avea la dispoziție un buton <b>Logout</b>
-                                prin care poate ieși din cont, dar is unul
-                                <b>Change Password</b>,
-                                în cazul în care își dorește acest lucru.
                             </li>
                         </ul>
                     </li>
