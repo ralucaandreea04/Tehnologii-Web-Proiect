@@ -298,7 +298,7 @@
                     utilizatorilor</h4>
                 <h5>2.3.1 Utilizator principal</h5>
                 <ul>
-                    <li>utilizatorii autentificați pot fi:</li>
+                    <li>utilizatorii pot fi:</li>
                     <li style="list-style: none">
                         <ul>
                             <li>orice categorie de oameni care
@@ -309,20 +309,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        utilizatorii neautentificați pot fi:
-                        <ul>
-                            <li>persoane care doresc să afle
-                                informații generale despre SAG
-                                Awards.
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
                 <h5>2.3.2 Caracteristici</h5>
                 <ul>
-                    <li>Utilizatorii care sunt <b> autentificați
-                        </b> pot să acceseze toate paginile aplicației web cum ar fi:
+                    <li>Utilizatorii pot să acceseze toate paginile aplicației web cum ar fi:
                         <ul>
                             <li> pagina "Home" unde poate vedea o galerie foto de la ultima ediție a premiile SAG și informații despre ultimele persoane căutate;</li>
                             <li> pagina "About" care oferă informații despre SAG Awards;</li>
