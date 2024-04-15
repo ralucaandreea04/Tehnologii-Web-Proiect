@@ -324,9 +324,7 @@
                                             informații despre SAG Awards;</li>
                                         <li> pagina "Login" unde se poate
                                             autentifica în contul său pentru a
-                                            vizualiza cele mai recente
-                                            actualizări ale actorilor
-                                            preferați;</li>
+                                            vizualiza și modifica conținutul ca administrator;</li>
                                         <li> prin intermediul meniului lateral,
                                             utilizatorii vor putea vizualiza
                                             informații specifice despre o
