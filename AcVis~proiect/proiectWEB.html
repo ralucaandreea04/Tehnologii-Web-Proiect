@@ -17,10 +17,16 @@
             <a href="proiectWEB.html">Home</a>
             <a href="loginWEB.html">Login</a>
             <a href="aboutWEB.html">About</a>
-            <div class="search-container">
+            <!-- <div class="search-container">
                 <input type="text" class="search-input"
                     placeholder="Search your favorite actor...">
                 <button onclick="search()">Search</button>
+            </div> -->
+            <div class="search-container">
+                <form method="post" action="search.php">
+                    <input type="text" name="search" class="search-input" placeholder="Search your favorite actor...">
+                    <button type="submit">Search</button>
+                </form>
             </div>
         </nav>
         <section class="container">
