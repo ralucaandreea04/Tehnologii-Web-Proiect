@@ -2,10 +2,10 @@
 session_start();
 
 $servername = "localhost";
-$username = "root"; 
-$dbname = "tehnologii_web";
-$password = "Raluca.andreea123";
-$table = "utilizatori"; 
+$username = "root";
+$password = "123321445";
+$dbname = "tw";
+$table = "utilizatori";
 $port = 3306;
 
 // Creare conexiune

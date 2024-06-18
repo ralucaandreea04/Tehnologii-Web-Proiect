@@ -1,10 +1,10 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "Raluca.andreea123";
-$dbname = "tehnologii_web";
-$table = "screen_actor_guild_awards";
-$port = 3306;
+ $servername = "localhost";
+ $username = "root";
+ $password = "123321445";
+ $dbname = "tw";
+ $table = "screen_actor_guild_awards";
+ $port = 3306;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $searchQuery = $_POST['search'];

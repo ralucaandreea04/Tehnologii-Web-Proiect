@@ -60,7 +60,7 @@
                     <a href="winners.php">Winners of 2020</a>
                 </li>
                 <li>
-                    <a href="#">All</a>
+                <a href="all_actors.php">All</a>
                 </li>
                 <li>
                     <label for="menu-year">Search by year</label>

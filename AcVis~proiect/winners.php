@@ -18,12 +18,12 @@
         <div class="main-content">
             <section>
             <?php
-                $servername = "localhost";
-                $username = "root";
-                $password = "Raluca.andreea123";
-                $dbname = "tehnologii_web";
-                $table = "screen_actor_guild_awards";
-                $port = 3306;
+                 $servername = "localhost";
+                 $username = "root";
+                 $password = "123321445";
+                 $dbname = "tw";
+                 $table = "screen_actor_guild_awards";
+                 $port = 3306;
                 
                 $conn = new mysqli($servername, $username, $password, $dbname, $port);
                 if ($conn->connect_error) {

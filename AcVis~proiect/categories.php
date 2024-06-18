@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "Raluca.andreea123";
-$dbname = "tehnologii_web";
+$password = "123321445";
+$dbname = "tw";
 $table = "screen_actor_guild_awards";
 $port = 3306;
 
@@ -26,12 +26,14 @@ if ($result->num_rows > 0) {
         echo '<label class="menu-toggle" for="submenu' . $category . '"></label>';
         echo '<ul class="submenu">';
 
-        $sql_actors = "SELECT full_name FROM $table WHERE category = '$category' AND LENGTH(full_name) > 0";
+        $sql_actors = "SELECT id, full_name FROM $table WHERE category = '$category' AND LENGTH(full_name) > 0";
         $result_actors = $conn->query($sql_actors);
 
         if ($result_actors->num_rows > 0) {
             while ($row_actor = $result_actors->fetch_assoc()) {
-                echo '<li><a href="#">' . $row_actor['full_name'] . '</a></li>';
+                $actor_id = $row_actor['id'];
+                $actor_name = $row_actor['full_name'];
+                echo '<li><a href="actor.php?id=' . $actor_id . '">' . $actor_name . '</a></li>';
             }
         } else {
             echo '<li><a href="#">No actors found.</a></li>';
@@ -42,7 +44,7 @@ if ($result->num_rows > 0) {
         echo '</li>';
     }
 } else {
-    echo '<li>No data.</li>';
+    echo '<li>No data found.</li>';
 }
 echo '</ul>';
 

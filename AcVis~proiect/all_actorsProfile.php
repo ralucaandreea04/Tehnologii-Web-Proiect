@@ -10,7 +10,7 @@
 
 <body>
     <nav>
-        <a href="proiectWEB.php">Back</a>
+        <a href="all_actors.php">Back</a>
     </nav>
     <div class="main-content">
         <section>

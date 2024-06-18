@@ -125,11 +125,11 @@
   }
 
   $servername = "localhost";
-  $username = "root"; 
-  $dbname = "tehnologii_web";
-  $table = "screen_actor_guild_awards"; 
-  $port = 3306;
-  $password = "Raluca.andreea123";
+            $username = "root";
+            $password = "123321445";
+            $dbname = "tw";
+            $table = "screen_actor_guild_awards";
+            $port = 3306;
   $conn = new mysqli($servername, $username,$password, $dbname, $port);
 
   if ($conn->connect_error) {
