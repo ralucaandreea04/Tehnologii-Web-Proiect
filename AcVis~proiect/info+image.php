@@ -1,8 +1,6 @@
 <?php
-
-// Funcție pentru a obține primele trei propoziții din biografia unui actor de pe Wikipedia
-function getFirstSentencesFromWikipedia($actorName) {
-    $url = 'https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro&explaintext&redirects=1&titles=' . urlencode($actorName);
+function getFirstSentencesFromWikipedia($actor_name_lower) {
+    $url = 'https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro&explaintext&redirects=1&titles=' . urlencode($actor_name_lower);
 
     $c = curl_init($url);
 
@@ -21,35 +19,27 @@ function getFirstSentencesFromWikipedia($actorName) {
 
     if ($httpCode == 200) {
         $data = json_decode($response, true);
-
-        // Parsează răspunsul JSON pentru a obține biografia
-        $pages = $data['query']['pages'];
-        $page = reset($pages); // Obține primul element din array-ul de pagini
-
-        if (isset($page['extract'])) {
-            // Obține textul biografiei
-            $biography = $page['extract'];
-
-            // Impartim biografia in propozitii
-            $sentences = preg_split('/(?<=[.?!])\s+(?=[a-zA-Z])/',$biography);
+        if (isset($data['query']['pages'])) {
+            $pages = $data['query']['pages'];
+            $page = reset($pages); 
             
-            // Construim un string cu primele trei propozitii
-            $firstSentences = implode(' ', array_slice($sentences, 0, 5));
-
-            return $firstSentences; // Returnează primele trei propoziții
+            if (isset($page['extract'])) {
+                $biography = $page['extract'];
+                // Split into sentences using regex
+                $sentences = preg_split('/(?<=[.?!])\s+(?=[a-zA-Z])/',$biography);
+                $firstSentences = implode(' ', array_slice($sentences, 0, 5));
+                return $firstSentences;
+            } else {
+                return 'Biography not found on Wikipedia.';
+            }
         } else {
-            return 'Biography not found on Wikipedia.';
+            return 'No valid page found for this actor on Wikipedia.';
         }
     } else {
         return 'Error fetching data from Wikipedia: Status code ' . $httpCode;
     }
-
     curl_close($c);
 }
-
-$actorName = 'Margot Robbie';
-$firstSentences = getFirstSentencesFromWikipedia($actorName);
-
+$firstSentences = getFirstSentencesFromWikipedia($actor_name_lower);
 echo '<p>' . $firstSentences . '</p>';
-
 ?>

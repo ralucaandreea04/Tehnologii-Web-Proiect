@@ -222,11 +222,12 @@ footer p {
     position: absolute;
     top: 0;
     left: 0;
-    background: white;
+    background: rgb(255, 255, 255);
     width: 240px;
-    height: 100%;
+    height: 100vh;
     transform: translate3d(-240px, 0, 0);
     transition: transform 0.35s;
+    max-height: 688.5px ;
 }
 
 .menu label.menu-toggle {
@@ -403,6 +404,25 @@ h3 {
     .image-container a {
         margin: 5px;
     }
+}
+
+.submenu {
+    max-height: 688.5px; /* Ajustați această valoare după cum este necesar */
+    overflow-y: auto; /* Permite derularea */
+    background-color: #ffffff;
+}
+
+.submenu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.submenu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
 }
 
 @media only screen and (min-width: 1024px)

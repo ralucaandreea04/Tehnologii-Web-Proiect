@@ -1,7 +1,7 @@
 <?php
 
 define('API_KEY', '2a0639b50adbbf71d00397aff3e8801d');
-$query = 'Margot Robbie';
+$query = $_GET['actor_name'];
 $url = 'https://api.themoviedb.org/3/search/person?api_key=' . API_KEY . '&query=' . urlencode($query);
 
 $c = curl_init($url);
