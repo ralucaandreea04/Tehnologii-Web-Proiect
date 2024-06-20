@@ -9,7 +9,9 @@ function paginaPrincipala_view() {
     $firstSentences = getFirstSentencesFromWikipedia($actor_name_lower);
     
     $data['first_sentences'] = $firstSentences;
-    
+    $last_searched_names = get_last_searched_names();
     require __DIR__.'/../view/paginaPrincipalaView.php';
 }
+
+
 ?>

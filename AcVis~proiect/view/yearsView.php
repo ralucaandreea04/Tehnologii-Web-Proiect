@@ -3,28 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listă ani și actori</title>
-    <style>
-            .submenu {
-            list-style: none;
-            padding: 0;
-        }
-        .submenu li {
-            margin-bottom: 5px;
-        }
-        .submenu label {
-            cursor: pointer;
-        }
-        .submenu input {
-            display: none;
-        }
-        .submenu .menu {
-            display: none;
-        }
-        .submenu input:checked ~ .menu {
-            display: block;
-        }
-    </style>
 </head>
 <body>
     <?php
@@ -45,7 +23,7 @@
         foreach ($actors as $actor) {
             $actor_id = $actor['id'];
             $actor_name = $actor['full_name'];
-            echo '<li><a href="/Tehnologii-Web-Proiect%20-%20Copy%20/AcVis~proiect/public/actor?id=' . $actor_id . '">' . $actor_name . '</a></li>';
+            echo '<li><a href="/AcVis~proiect/public/actor?id=' . $actor_id . '">' . $actor_name . '</a></li>';
         }
 
         echo '</ul>';

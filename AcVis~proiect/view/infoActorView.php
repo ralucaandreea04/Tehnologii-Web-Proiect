@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="public/images/icon.png" type="image/x-icon">
+    <link rel="icon" href="/AcVis~proiect/public/images/icon.png" type="image/x-icon">
     <title>ASV</title>
-    <link rel="stylesheet" href="public/css/cssActor.css">
+    <link rel="stylesheet" href="/AcVis~proiect/public/css/cssActor.css">
 </head>
 <body>
     <?php include 'templates/header.php'; ?>
@@ -45,13 +45,13 @@
     </div>
     <div class="container">
         <div class="images">
-          <img src="grafic1.png" alt="Imagine 1">
+          <img src="/AcVis~proiect/public/images/grafic1.png" alt="Imagine 1">
         </div>
         <div class="images">
-          <img src="grafic2.png" alt="Imagine 2">
+          <img src="/AcVis~proiect/public/images/grafic2.png" alt="Imagine 2">
         </div>
         <div class="images">
-          <img src="grafic3.png" alt="Imagine 3">
+          <img src="/AcVis~proiect/public/images/grafic3.png" alt="Imagine 3">
         </div>
     </div>
     <?php include 'templates/footer.php'; ?>

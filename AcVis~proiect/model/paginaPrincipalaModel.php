@@ -30,6 +30,25 @@ function get_actor_data($actor_id) {
     ];
 }
 
+
+function get_last_searched_names() {
+    $conn = get_db_connection();
+    $names = [];
+
+    $query = "SELECT name FROM last_searched ORDER BY id ASC";
+    $result = $conn->query($query);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $names[] = $row['name'];
+        }
+    }
+
+    $conn->close();
+
+    return $names;
+}
+
 function getFirstSentencesFromWikipedia($actor_name_lower) {
     $url = 'https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro&explaintext&redirects=1&titles=' . urlencode($actor_name_lower);
 

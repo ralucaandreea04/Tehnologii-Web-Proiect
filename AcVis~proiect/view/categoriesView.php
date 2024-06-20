@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/cssActor.css">
-    <title>List of Categories</title>
 </head>
 <body>
     <div class="main-content">
@@ -24,7 +22,7 @@
                 echo '<ul class="submenu">';
 
                 foreach ($category['actors'] as $actor) {
-                    echo '<li><a href="actor.php?id=' . $actor['id'] . '">' . $actor['name'] . '</a></li>';
+                    echo '<li><a href="/AcVis~proiect/public/actor?id=' . $actor['id'] . '">' . $actor['name'] . '</a></li>';
                 }
 
                 echo '</ul>';

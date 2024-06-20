@@ -3,8 +3,8 @@ session_start();
 
 $servername = "localhost";
 $username = "root";
-$password = "123321445";
-$dbname = "tw";
+$password = "Raluca.andreea123";
+$dbname = "tehnologii_web";
 $table = "utilizatori";
 $port = 3306;
 
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['loggedin'] = true;
         $_SESSION['name'] = $name;
         $_SESSION['email'] = $email;
-        header("Location: /Tehnologii-Web-Proiect%20-%20Copy%20/AcVis~proiect/public/adminpage");
+        header("Location: /AcVis~proiect/public/adminpage");
         exit;
     } else {
         echo "<h1>Login Failed</h1>";

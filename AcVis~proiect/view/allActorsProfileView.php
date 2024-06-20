@@ -1,6 +1,3 @@
-<?php
-require_once __DIR__ . '/data/news.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +21,7 @@ require_once __DIR__ . '/data/news.php';
 
 <body>
     <nav>
-        <a href="/AcVis~proiect/public/">Back</a>
+        <a href="/AcVis~proiect/public/all">Back</a>
     </nav>
     <div class="main-content">
         <section>
@@ -44,9 +41,8 @@ require_once __DIR__ . '/data/news.php';
             </ul>
             <div class="news-box">
                 <h2 class="news-title">Breaking News</h2>
-                <h2><?php echo htmlspecialchars($title); ?></h2>
-                <p><?php echo htmlspecialchars($description); ?></p>
-                <a href="<?php echo htmlspecialchars($newsArticle['url']); ?>"class="read-more" target="_blank">Read more</a>
+                <p class="news-content">News about <?php echo htmlspecialchars($actor_name); ?>, her latest projects and her personal life.</p>
+                <a href="https://people.com/tag/<?php echo urlencode($actor_name); ?>/" class="read-more" target="_blank">Read more</a>
             </div>
         </section>
         <div class="right-section">
@@ -55,7 +51,6 @@ require_once __DIR__ . '/data/news.php';
             </div>
         </div>
     </div>
-    <div class="container">
     <div class="chart-container">
         <div class="chart">
             <canvas id="myChartBar"></canvas>
@@ -74,7 +69,5 @@ require_once __DIR__ . '/data/news.php';
             ?>
         </div>
     </div>
-</div>
-
 </body>
 </html>
