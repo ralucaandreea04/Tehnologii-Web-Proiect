@@ -1,6 +1,6 @@
 <?php
 
-define('API_KEY', '2a0639b50adbbf71d00397aff3e8801d');
+define('API_KEY', '7c12d7e0b5fcb20bf6adaf6cc72e6224');
 $query = $_GET['actor_name'];
 $url = 'https://api.themoviedb.org/3/search/person?api_key=' . API_KEY . '&query=' . urlencode($query);
 

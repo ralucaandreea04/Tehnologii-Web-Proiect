@@ -1,3 +1,7 @@
+<?php
+require_once __DIR__.'/../controller/winnersController.php';
+$winners = show_winners_list();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +21,6 @@
     <div class="main-content">
         <section>
             <?php
-            require_once __DIR__.'/../controller/winnersController.php';
-            $winners = show_winners_of_2020();
             foreach ($winners as $winner) {
                 echo "<p>$winner</p>";
             }

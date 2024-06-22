@@ -6,20 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/AcVis~proiect/public/images/icon.png" type="image/x-icon">
     <title>All Actors</title>
-    <link rel="stylesheet" href="/AcVis~proiect/public/css/cssAllActors.css">
+    <link rel="stylesheet" type="text/css" href="/AcVis~proiect/public/css/cssAllActors.css">
 </head>
 
 <body>
     <nav>
-        <div class="logo">
-            <a href="proiectWEB.html">All Screen Actors Guild Awards Nominees</a>
-        </div>
-        <div class="nav-links">
-            <a href="/AcVis~proiect/public/">Home</a>
-        </div>
+        <a href="/AcVis~proiect/public/">Back</a>
     </nav>
     <section class="container">
-        <h3 class="year-heading">Nominees</h3>
+        <h3 class="year-heading">All Screen Actors Guild Awards Nominees</h3>
         <?php
         foreach ($actors_by_year as $year => $actors) {
             echo '<h3 class="year-heading">' . $year . '</h3>';

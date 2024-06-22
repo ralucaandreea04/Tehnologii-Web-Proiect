@@ -58,8 +58,8 @@
     <div class="menu">
         <label class="menu-toggle" for="menu"><span>Toggle</span></label>
         <ul>
-            <li><a href="/AcVis~proiect/public/winners">Winners of 2020</a></li>
-            <li><a href="/AcVis~proiect/public/all">See All Actors</a>
+        <li><a href="/AcVis~proiect/public/winners" id="winners-link">Winners of 2020</a></li>
+        <li><a href="/AcVis~proiect/public/all">See All Actors</a>
             </li>
             <li>
                 <label for="menu-year">Search by year</label>
@@ -87,5 +87,24 @@
     <footer>
         <p>&copy; Bocanet Raluca-Andreea & Cirjontu Ionela-Elena-Daniela</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const winnersLink = document.getElementById('winners-link');
+            const mainContent = document.querySelector('.main-content');
+
+            function showWinners() {
+                const winnersURL = '/AcVis~proiect/public/winners';
+
+                fetch(winnersURL)
+                    .then(response => response.text())
+                    .then(data => {
+                        history.pushState({ page: 'winners' }, 'Winners of 2020', winnersURL);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching winners:', error);
+                    });
+            }
+        });
+    </script>
 </body>
 </html>

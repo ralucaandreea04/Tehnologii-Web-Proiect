@@ -7,6 +7,7 @@
   <title>SAG Awards | Profile</title>
   <link rel="stylesheet" href="/AcVis~proiect/public/css/cssAdminPage.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas2svg"></script>
   <style>
     #myChart {
       width: 650px;
@@ -219,12 +220,34 @@
     <div class="chart-container">
         <div class="chart">
             <canvas id="myChart"></canvas>
+            <button id="exportCsvBtn">Export CSV</button>
             <?php
                 include '../view/data/chart_radar.php';
                 $chartData = generateRadarChart();
-                echo $chartData;
+                echo $chartData['chart_js'];
             ?>
         </div>
     </div> 
+  </div>
+  <script>
+    document.getElementById('exportCsvBtn').addEventListener('click', function() {
+      var labels = <?php echo $chartData['labels']; ?>;
+      var data = <?php echo $chartData['data']; ?>;
+      var csvContent = "data:text/csv;charset=utf-8,Year,Num Nominations\n";
+
+      labels.forEach(function(label, index) {
+        csvContent += label + "," + data[index] + "\n";
+      });
+
+      var encodedUri = encodeURI(csvContent);
+      var link = document.createElement('a');
+      link.setAttribute('href', encodedUri);
+      link.setAttribute('download', 'chart_data.csv');
+      document.body.appendChild(link);
+
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
 </body>
 </html>

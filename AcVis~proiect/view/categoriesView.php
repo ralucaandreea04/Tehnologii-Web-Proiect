@@ -22,7 +22,12 @@
                 echo '<ul class="submenu">';
 
                 foreach ($category['actors'] as $actor) {
-                    echo '<li><a href="/AcVis~proiect/public/actor?id=' . $actor['id'] . '">' . $actor['name'] . '</a></li>';
+                    if($actor['show']=='false')
+                        echo '<li><a href="/AcVis~proiect/public/actor?id=' . $actor['id'] . '">' . $actor['name'] . '</a></li>';
+                    else if($actor['show']=='true')
+                        {
+                            echo '<li><a href="/AcVis~proiect/public/show?id=' . $actor['id'] . '">' . $actor['name'] . '</a></li>';
+                        }
                 }
 
                 echo '</ul>';

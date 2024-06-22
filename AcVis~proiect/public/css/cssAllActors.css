@@ -7,44 +7,40 @@ body {
 }
 
 nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0; /* Ajustăm padding-ul pentru a centra butoanele pe orizontală */
-    display: flex; /* Folosim flexbox pentru a alinia elementele */
-    justify-content: space-between; /* Aliniem elementele la început și sfârșit */
-    align-items: center; /* Aliniem vertical pe axa Y */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
+    background-color: #D4AF37;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 20px;
 
-.logo {
-    margin-left: 10px; /* Ajustăm margin-left pentru a muta logo-ul mai în stânga */
-}
-
-.nav-links {
-    display: flex; /* Utilizăm flexbox pentru alinierea butoanelor */
-    justify-content: center; /* Aliniem butoanele pe orizontală în mijloc */
-    align-items: center; /* Aliniem butoanele pe verticală în mijloc */
-    flex-grow: 1; /* Împinge butoanele în stânga logo-ului */
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
+}
+
+
+.logo {
+    margin-left: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
 }
 
 .container {
-    max-width: none; /* Eliminăm limitarea la o lățime maximă */
-    margin: 100px auto; /* Ajustăm margin-top pentru a lăsa suficient spațiu sub bara de navigație */
+    max-width: none; 
+    margin: 10x auto; 
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding-left: 20px; /* Adăugăm un spațiu între marginea stângă a containerului și text */
+    padding-left: 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +72,7 @@ nav a {
 }
 
 .actor-list a:hover {
-    color: #007bff;
+    color: #D4AF37;
 }
 
 .actor-list-single-column {

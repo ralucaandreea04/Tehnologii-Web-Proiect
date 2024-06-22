@@ -24,7 +24,11 @@ function generateRadarChart() {
             $data[] = (int)$row["num_nominations"];
         }
     } else {
-        return "// 0 rezultate";
+        return [
+            'labels' => json_encode([]),
+            'data' => json_encode([]),
+            'chart_js' => "// 0 rezultate"
+        ];
     }
 
     $conn->close();
@@ -67,6 +71,11 @@ function generateRadarChart() {
             });
         </script>
     JS;
-    return $chartJS;
+    
+    return [
+        'labels' => $years,
+        'data' => $data,
+        'chart_js' => $chartJS
+    ];
 }
 ?>

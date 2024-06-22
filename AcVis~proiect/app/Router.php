@@ -14,6 +14,7 @@ $routes = [
     '/AcVis~proiect/public/about' =>__DIR__. '/../controller/aboutController.php',
     '/AcVis~proiect/public/search' =>__DIR__. '/../controller/searchController.php',
     '/AcVis~proiect/public/allActors' =>__DIR__. '/../controller/allActorsProfileController.php',
+    '/AcVis~proiect/public/show' =>__DIR__. '/../controller/showController.php',
 ];
 if (array_key_exists($path, $routes)) {
     require_once $routes[$path];

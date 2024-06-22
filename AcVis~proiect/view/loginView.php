@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="/AcVis~proiect/public/css/icon.png" type="image/x-icon">
+        <link rel="icon" href="/AcVis~proiect/public/images/icon.png" type="image/x-icon">
         <title>Login to SAG Awards</title>
         <link rel="stylesheet" href="/AcVis~proiect/public/css/cssLoginPage.css">
     </head>
@@ -32,10 +32,6 @@
                     <button type="submit">
                         Submit
                     </button>
-                </div>
-                <div class="rememberMe">
-                    <p>Remember me?</p>
-                    <input type="checkbox" id="rememberMe" name="rememberMe">
                 </div>
             </form>
         </div>

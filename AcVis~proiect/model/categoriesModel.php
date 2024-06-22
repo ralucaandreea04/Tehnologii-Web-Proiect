@@ -1,5 +1,5 @@
 <?php
- require_once __DIR__.'/../db.php';
+require_once __DIR__.'/../db.php';
 
 function getCategoriesWithActors() {
     $conn = get_db_connection();
@@ -14,20 +14,31 @@ function getCategoriesWithActors() {
             $category = $row['category'];
             $actors = [];
 
-            $sql_actors = "SELECT id, full_name FROM $table WHERE category = '$category' AND LENGTH(full_name) > 0";
+            $sql_actors = "SELECT id, full_name, `show` FROM $table WHERE category = '$category'";
             $result_actors = $conn->query($sql_actors);
 
             if ($result_actors->num_rows > 0) {
                 while ($row_actor = $result_actors->fetch_assoc()) {
                     $actor_id = $row_actor['id'];
                     $actor_name = $row_actor['full_name'];
-                    $actors[] = [
-                        'id' => $actor_id,
-                        'name' => $actor_name
-                    ];
+                    $show_name = $row_actor['show'];
+
+                    if (!empty($actor_name)) {
+                        $actors[] = [
+                            'id' => $actor_id,
+                            'name' => $actor_name,
+                            'show' => 'false'
+                        ];
+                    } elseif (!empty($show_name)) {
+                        $actors[] = [
+                            'id' => $actor_id,
+                            'name' => $show_name,
+                            'show' => 'true'
+                        ];
+                    }
                 }
             } else {
-                $actors[] = ['id' => null, 'name' => 'No actors found'];
+                $actors[] = ['id' => null, 'name' => 'No data found'];
             }
 
             $categories_with_actors[] = [
