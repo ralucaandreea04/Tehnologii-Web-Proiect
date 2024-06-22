@@ -59,8 +59,7 @@
         <label class="menu-toggle" for="menu"><span>Toggle</span></label>
         <ul>
         <li><a href="/AcVis~proiect/public/winners" id="winners-link">Winners of 2020</a></li>
-        <li><a href="/AcVis~proiect/public/all">See All Actors</a>
-            </li>
+        <li><a href="/AcVis~proiect/public/all" id="all-actors">See All Actors</a></li>
             <li>
                 <label for="menu-year">Search by year</label>
                 <input type="checkbox" id="menu-year" name="menu-year" class="menu-checkbox">
@@ -91,17 +90,24 @@
         document.addEventListener('DOMContentLoaded', function() {
             const winnersLink = document.getElementById('winners-link');
             const mainContent = document.querySelector('.main-content');
-
             function showWinners() {
                 const winnersURL = '/AcVis~proiect/public/winners';
-
                 fetch(winnersURL)
                     .then(response => response.text())
-                    .then(data => {
-                        history.pushState({ page: 'winners' }, 'Winners of 2020', winnersURL);
-                    })
                     .catch(error => {
                         console.error('Error fetching winners:', error);
+                    });
+            }
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const actorLink = document.getElementById('all-actors');
+            const mainContent = document.querySelector('.main-content');
+            function showActor() {
+                const actorURL = '/AcVis~proiect/public/all';
+                fetch(actorURL)
+                    .then(response => response.text())
+                    .catch(error => {
+                        console.error('Error fetching actors:', error);
                     });
             }
         });
