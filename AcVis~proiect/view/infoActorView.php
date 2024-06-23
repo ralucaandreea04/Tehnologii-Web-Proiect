@@ -54,6 +54,5 @@
           <img src="/AcVis~proiect/public/images/grafic3.png" alt="Imagine 3">
         </div>
     </div>
-    <?php include 'templates/footer.php'; ?>
 </body>
 </html>

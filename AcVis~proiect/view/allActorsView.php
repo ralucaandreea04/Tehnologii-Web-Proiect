@@ -11,7 +11,7 @@
 
 <body>
     <nav>
-        <a href="/AcVis~proiect/public/">Back</a>
+        <a href="/AcVis~proiect/public/">BACK</a>
     </nav>
     <section class="container">
         <h3 class="year-heading">All Screen Actors Guild Awards Nominees</h3>
@@ -31,7 +31,7 @@
         ?>
     </section>
     <footer>
-        <p>&copy; Bocanet Raluca-Andreea & Cirjontu Ionela-Elena-Daniela</p>
+        <p>&copy; Bocăneț Raluca-Andreea & Cîrjonțu Ionela-Elena-Daniela</p>
     </footer>
 </body>
 

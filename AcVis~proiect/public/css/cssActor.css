@@ -13,14 +13,16 @@ header {
 }
 
 nav {
-    background-color: white;
+    background-color: #f5f5dc;
     padding: 20px;
     display: flex;
     justify-content: flex-start;
+    border-radius: 20px;
+    font-weight: bold;
 }
 
 nav a {
-    color: #6b5c04;
+    color: #D4AF37;
     text-decoration: none;
     margin: 0 15px;
 }
@@ -132,4 +134,19 @@ section {
 .images img {
     max-width: 100%;
     height: auto;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons-container button {
+    margin: 0 5px;
+}
+
+.buttons-container button:nth-child(3) {
+    margin-right: 240px; 
 }

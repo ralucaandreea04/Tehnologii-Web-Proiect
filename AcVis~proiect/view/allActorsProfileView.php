@@ -24,7 +24,7 @@ require_once __DIR__ . '/data/news.php';
 
 <body>
     <nav>
-        <a href="/AcVis~proiect/public/">Back</a>
+        <a href="/AcVis~proiect/public/">BACK</a>
     </nav>
     <div class="main-content">
         <section>
@@ -56,8 +56,12 @@ require_once __DIR__ . '/data/news.php';
         </div>
     </div>
     <div class="buttons-container">
-        <button id="exportChartButton" onclick="exportChart_Bar()">Export SVG for Bar Chart</button>
-        <button id="exportChartButton" onclick="exportChart_Circle()">Export WebP for Circle Chart</button>
+        <button id="exportChartButton" onclick="exportChart_Bar_SVG()">Export SVG for Bar Chart</button>
+        <button id="exportChartButton" onclick="exportChart_Bar_WebP()">Export WebP for Bar Chart</button>
+        <button id="exportChartBarCSVButton" onclick="exportChart_Bar_CSV()">Export CSV for Bar Chart</button>
+        <button id="exportChartButton" onclick="exportChart_Circle_SVG()">Export SVG for Circle Chart</button>
+        <button id="exportChartButton" onclick="exportChart_Circle_WebP()">Export WebP for Circle Chart</button>
+        <button id="exportChartBarCSVButton" onclick="exportChart_Circle_CSV()">Export CSV for Circle Chart</button>
     </div>
     <div class="container">
         <div class="chart-container">
@@ -80,8 +84,8 @@ require_once __DIR__ . '/data/news.php';
         </div>
     </div>
     <script>
-        function exportChart_Circle() {
-            var canvas = document.getElementById('myChartCircle');
+        function exportChart_Bar_WebP() {
+            var canvas = document.getElementById('myChartBar');
             if (canvas) {
                 try {
                     var dataUrl = canvas.toDataURL('image/webp');
@@ -96,7 +100,8 @@ require_once __DIR__ . '/data/news.php';
                 }
             }
         }
-        function exportChart_Bar() {
+
+        function exportChart_Bar_SVG() {
             var canvas = document.getElementById('myChartBar');
             if (canvas) {
                 try {
@@ -128,6 +133,92 @@ require_once __DIR__ . '/data/news.php';
                 }
             }
         }
-        </script>
+
+        function exportChart_Circle_WebP() {
+            var canvas = document.getElementById('myChartCircle');
+            if (canvas) {
+                try {
+                    var dataUrl = canvas.toDataURL('image/webp');
+                    var link = document.createElement('a');
+                    link.href = dataUrl;
+                    link.download = 'chart.webp';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } catch (error) {
+                    console.error('Error exporting chart:', error);
+                }
+            }
+        }
+
+        function exportChart_Circle_SVG() {
+            var canvas = document.getElementById('myChartCircle');
+            if (canvas) {
+                try {
+                    var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                    svg.setAttribute("width", canvas.width);
+                    svg.setAttribute("height", canvas.height);
+
+                    var image = new Image();
+                    image.onload = function () {
+                        var svgImage = document.createElementNS("http://www.w3.org/2000/svg", "image");
+                        svgImage.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", canvas.toDataURL());
+                        svgImage.setAttribute("width", canvas.width);
+                        svgImage.setAttribute("height", canvas.height);
+                        svg.appendChild(svgImage);
+
+                        var serializer = new XMLSerializer();
+                        var svgString = serializer.serializeToString(svg);
+                        var blob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
+                        var link = document.createElement('a');
+                        link.href = URL.createObjectURL(blob);
+                        link.download = 'chart.svg';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                    };
+                    image.src = canvas.toDataURL();
+                } catch (error) {
+                    console.error('Error exporting chart:', error);
+                }
+            }
+        }
+
+        function exportChart_Bar_CSV() {
+            var labels = <?php echo json_encode($chartDataBar['labels']); ?>;
+            var data = <?php echo json_encode($chartDataBar['data']); ?>;
+            var csv = 'Label,Value\n';
+
+            for (var i = 0; i < labels.length; i++) {
+                csv += labels[i] + ',' + data[i] + '\n';
+            }
+
+            var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            var link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'chart_bar.csv';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function exportChart_Circle_CSV() {
+            var labels = <?php echo json_encode($chartDataCircle['labels']); ?>;
+            var data = <?php echo json_encode($chartDataCircle['data']); ?>;
+            var csv = 'Label,Value\n';
+
+            for (var i = 0; i < labels.length; i++) {
+                csv += labels[i] + ',' + data[i] + '\n';
+            }
+
+            var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            var link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'chart_circle.csv';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 </body>
 </html>

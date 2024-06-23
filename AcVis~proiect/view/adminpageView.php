@@ -72,6 +72,7 @@
           </div>
           <button type="submit" name="add_record" class="btn">Add Record</button>
         </form>
+        <?php if ($messages['add_record']) echo "<p class='notification' id='deleteFormMessage'>{$messages['add_record']}</p>"; ?>
       </div>
 
       <div id="delete-form">
@@ -83,6 +84,7 @@
           </div>
           <button type="submit" name="delete_record" class="btn">Delete Record</button>
         </form>
+        <?php if ($messages['delete_record']) echo "<p class='notification' id='deleteFormMessage'>{$messages['delete_record']}</p>"; ?>
       </div>
 
       <div id="change-password">
@@ -102,6 +104,7 @@
           </div>
           <button type="submit" name="change_password" class="btn">Change Password</button>
         </form>
+        <?php if ($messages['change_password']) echo "<p class='notification' id='changePasswordMessage'>{$messages['change_password']}</p>"; ?>
       </div>
     </div>
 
@@ -155,6 +158,8 @@
         <div class="chart">
             <canvas id="myChart"></canvas>
             <button id="exportCsvBtn">Export CSV</button>
+            <button id="exportSvgBtn">Export SVG</button>
+            <button id="exportWebPBtn">Export WebP</button>
             <?php
                 include '../view/data/chart_radar.php';
                 $chartData = generateRadarChart();
@@ -182,6 +187,55 @@
       link.click();
       document.body.removeChild(link);
     });
+    document.getElementById('exportSvgBtn').addEventListener('click', function() {
+            var canvas = document.getElementById('myChart');
+            if (canvas) {
+                try {
+                    var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                    svg.setAttribute("width", canvas.width);
+                    svg.setAttribute("height", canvas.height);
+
+                    var image = new Image();
+                    image.onload = function () {
+                        var svgImage = document.createElementNS("http://www.w3.org/2000/svg", "image");
+                        svgImage.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", canvas.toDataURL());
+                        svgImage.setAttribute("width", canvas.width);
+                        svgImage.setAttribute("height", canvas.height);
+                        svg.appendChild(svgImage);
+
+                        var serializer = new XMLSerializer();
+                        var svgString = serializer.serializeToString(svg);
+                        var blob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
+                        var link = document.createElement('a');
+                        link.href = URL.createObjectURL(blob);
+                        link.download = 'chart.svg';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                    };
+                    image.src = canvas.toDataURL();
+                } catch (error) {
+                    console.error('Error exporting chart:', error);
+                }
+            }
+        });
+
+        document.getElementById('exportWebPBtn').addEventListener('click', function() {
+            var canvas = document.getElementById('myChart');
+            if (canvas) {
+                try {
+                    var dataUrl = canvas.toDataURL('image/webp');
+                    var link = document.createElement('a');
+                    link.href = dataUrl;
+                    link.download = 'chart.webp';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } catch (error) {
+                    console.error('Error exporting chart:', error);
+                }
+            }
+        });
     document.getElementById('addRecordForm').addEventListener('submit', function(event) {
             event.preventDefault();
             fetch('/AcVis~proiect/public/adminpage', {

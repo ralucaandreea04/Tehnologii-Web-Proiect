@@ -84,7 +84,7 @@
     </div>
 
     <footer>
-        <p>&copy; Bocanet Raluca-Andreea & Cirjontu Ionela-Elena-Daniela</p>
+        <p>&copy; Bocăneț Raluca-Andreea & Cîrjonțu Ionela-Elena-Daniela</p>
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
