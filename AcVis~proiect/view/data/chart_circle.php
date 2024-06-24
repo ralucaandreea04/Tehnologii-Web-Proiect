@@ -67,7 +67,7 @@ function generateChartCircle($actor_name) {
                             tooltip: {
                                 callbacks: {
                                     label: function(tooltipItem) {
-                                        return tooltipItem.label + ': ' + tooltipItem.raw.toFixed(2); // Afișarea valorilor pe tooltip
+                                        return tooltipItem.label + ': ' + tooltipItem.raw.toFixed(2); 
                                     }
                                 }
                             }
