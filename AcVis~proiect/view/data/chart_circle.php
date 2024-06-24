@@ -40,7 +40,6 @@ function generateChartCircle($actor_name) {
                 var labels = " . json_encode($labels) . ";
                 var data = " . json_encode($data) . ";
 
-                // Ensure colors array matches the number of data points
                 var backgroundColors = " . json_encode($colors) . ";
 
                 var ctx = document.getElementById('myChartCircle').getContext('2d');
