@@ -270,10 +270,12 @@
                                 <li>să acceseze câștigătorii ultimului an
                                     (2022) și să-și caute actorul
                                     favorit;</li>
-                                <li>să acceseze prin filtrarile puse la
+                                <li>să acceseze prin filtrarile (filtrari dupa an si categorie) puse la
                                     dispoziție nominalizările și
                                     câștigătorii fiecărei categorii din
                                     perioada 1995-2022;</li>
+                                <li>posibilitatea vizualizarii tuturor actorilor nominalizati prin apasarea butonului
+                                    "See All Actors" din meniu;</li>
                                 <li>să acceseze pagina "About" pentru a
                                     accesa
                                     scurtă descriere a paginii web;</li>
@@ -290,8 +292,8 @@
                                 </li>
                                 <li>dacă utilizatorul are rol de
                                     <b>admin</b>,
-                                    acesta poate actualiza informațiile din
-                                    aplicația web.
+                                    acesta isi poate schimba parola prin scrierea celei vechi si introducerea cele 
+                                    noi.
                                 </li>
                             </ul>
                         </section>
@@ -308,6 +310,7 @@
                                         să știe mai mult despre actorii
                                         preferați;
                                     </li>
+                                    <li>administratorului pentru a face modificari bazei de date.</li>
                                 </ul>
                             </ul>
                             <h5>2.3.2 Caracteristici</h5>
@@ -328,7 +331,15 @@
                                             utilizatorii vor putea vizualiza
                                             informații specifice despre o
                                             anumită categorie, an sau
-                                            actor.</li>
+                                            actor. Dupa alegerea filmului sau a serialului se va deschide o pagina cu 
+                                            informatii legate de nominalizarile acestuia si o imagine cu poster-ul 
+                                            sau. Daca utilizatorul alege sa selecteze un actor se va deschide o 
+                                            pagina cu informatii de pe wikipedia despre el, o lista cu nominalizari 
+                                            extrase din baza de date, o poza cu acesta, o sectiune cu ultima stire 
+                                            despre el urmata de un buton "Read more" care deschide o fila noua cu acea
+                                            stire si in partea de jos se vor regasi doua tipuri de statistici cu trei
+                                            feluri de export-uri generate pe baza listei de nominalizari.
+                                        </li>
                                     </ul>
                                 </li>
                             </li>
@@ -378,7 +389,7 @@
                                     </li>
                                     <li class="pictures"
                                         style="list-style: none"><img
-                                            alt="login" src="baraNavigatie.png"
+                                            alt="login" src="Images-Documentation/baraNavigatie.png"
                                             width=900></li>
                                 </ul>
                             </li>
@@ -399,7 +410,7 @@
                                     <li class="pictures"
                                         style="list-style: none"><img
                                             alt="login"
-                                            src="loginPoza.png" width=700>
+                                            src="Images-Documentation/loginPoza.png" width=700>
                                     </li>
                                 </ul>
                             </li>
@@ -409,11 +420,11 @@
                                 <ul>
                                     <li>Pagina are rolul de prezența
                                         ultimele imagini de la SAG Awards și
-                                        informații despre ultimele persoane
+                                        vizualizarea ultimelor persoane
                                         căutate.</li>
                                     <li class="pictures"
                                         style="list-style: none"><img
-                                            alt="overview" src="homePage1.png"
+                                            alt="overview" src="Images-Documentation/homePage1.png"
                                             width=800> <img alt="overview"
                                             src="homePage2.png" width=800>
                                     </li>
@@ -427,7 +438,7 @@
                                         informații despre SAG Awards.</li>
                                     <li class="pictures"
                                         style="list-style: none"><img
-                                            alt="overview" src="aboutPoza.png"
+                                            alt="overview" src="Images-Documentation/aboutPoza.png"
                                             width=800>
                                     </li>
                                 </ul>
@@ -507,7 +518,8 @@
                                             care
                                             permite filtrarea după anumite
                                             criterii
-                                            ale actorilor.</li>
+                                            ale actorilor(castigatorii din ultimul an 2020, toti actorii 
+                                            nominalizati, selectii bazate pe un anumit an sau categorii).</li>
                                         <li>Secțiunea de ultimii actori
                                             căutați: Pentru vizualizarea
                                             actorilor
@@ -528,56 +540,18 @@
                                     <h5 id="management-1">4.1.1
                                         Descriere și
                                         generalități</h5>
-                                    Un utilizator se
-                                    poate înregistra
-                                    alegându-și un
-                                    nume
-                                    de utilizator,
-                                    un
-                                    email, o parola,
-                                    numele si
-                                    prenumele.
-                                    Acesta se poate
-                                    autentifica
-                                    având
-                                    nevoie doar de
-                                    numele de
-                                    utilizator
-                                    și de parolă.
+                                    Un utilizator poate accesa site-ul si vizualiza informatii despre SAG Awards 
+                                    creat fara a se autentifica. Singura persoana care se poate autentifica este 
+                                    administratorul care are nevoie de o adresa de email si o parola pentru a accesa 
+                                    pagina adminului.
                                     <h5 id="management-2">4.1.2
                                         Actualizarea
                                         informațiilor</h5>
                                     <ul>
                                         <li>
-                                            În
-                                            momentul
-                                            în care
-                                            un
-                                            utilizator
-                                            nou este
-                                            creat,
-                                            credențialele
-                                            acestuia
-                                            sunt
-                                            introduse
-                                            în
-                                            baza de
-                                            date. De
-                                            asemenea,
-                                            când
-                                            utilizatorul
-                                            decide
-                                            să-și
-                                            modifice
-                                            credențialele,
-                                            noile
-                                            valori
-                                            sunt
-                                            și ele
-                                            actualizate
-                                            în baza
-                                            de
-                                            date.
+                                            Actualizarea informatiilor este realizata de catrea administrator. Acesta
+                                            poate sterge sau adauga informatii despre SAG Awards si isi poate schimba 
+                                            parola, toate aceste modificari fiind actualizari ale bazei de date.
                                         </li>
                                     </ul>
                                     <h5 id="management-3">4.1.3
@@ -628,64 +602,28 @@
                                     aceasta îi oferă
                                     posibilitatea
                                     de a vizualiza o
-                                    listă cu toți
-                                    utilizatorii din
+                                    listă cu toti nominalizatii la premiile SAG din
                                     baza de date. De
                                     asemenea, acesta
                                     are
                                     posibilitatea
-                                    de a elimina
-                                    utilizatori din
-                                    baza
-                                    de date, dacă
+                                    de a modifica informatii despre nominalizati, dacă
                                     dorește acest
                                     lucru.
                                     <h5 id="utilizatori-2">4.2.2
                                         Actualizarea
                                         informațiilor</h5>
                                     <ul>
-                                        <li>
-                                            La
-                                            apăsarea
-                                            butonului
-                                            de
-                                            ștergere
-                                            din
-                                            dreptul
-                                            fiecărui
-                                            utilizator,
-                                            credențialele
-                                            utilizatorului
-                                            care a
-                                            fost
-                                            selectat,
-                                            sunt
-                                            șterse
-                                            din baza
-                                            de
-                                            date.
-                                        </li>
+                                        <li>Utilizatorul nu poate modifica nimic din baza de date.</li>
                                     </ul>
                                     <h5 id="utilizatori-3">4.2.3
                                         Condiții de
                                         funcționare</h5>
                                     <ul>
                                         <li>
-                                            Utilizatorul
-                                            trebuie
-                                            să
-                                            fie
-                                            autentificat.
+                                            Utilizatorul nu trebuie sa fie autentificat pentru a accesa site-ul.
                                         </li>
-                                        <li>
-                                            Utilizatorul
-                                            trebuie
-                                            să
-                                            dețină
-                                            drepturi
-                                            de
-                                            admin.
-                                        </li>
+                                        <li> Un utilizator poate detine drepturi de admin.</li>
                                     </ul>
                                 </section>
                                 <section id="administrator">
@@ -718,57 +656,23 @@
                                     control,
                                     va putea
                                     adaugă/modifică
-                                    întrebări și
-                                    chestionare
-                                    direct
-                                    de pe platforma.
-                                    Totodată, acesta
-                                    este
-                                    capabil să
-                                    șteargă
-                                    conturi ale
-                                    utilizatorilor.
+                                    informatii despre nominalizarile SAG Awards.
                                     <h5 id="administrator-2">4.3.2
                                         Actualizare
                                         informațiilor</h5>
                                     <ul>
                                         <li>
-                                            În
-                                            momentul
-                                            în care
-                                            adminul
-                                            adaugă o
-                                            întrebare
-                                            sau un
-                                            chestionar,
-                                            informațiile
-                                            despre
-                                            acestea
-                                            sunt
-                                            inserate
-                                            în baza
-                                            de
-                                            date.
+                                            Pentru adaugarea unui nominalizat administratorul trebuie sa completeze 
+                                            cele 6 rublici cum ar fi ID, Year, Category, Full name si Won(aici va fi 
+                                            introdus true sau false daca acesta a castigat sau nu preminul). La final,
+                                            dupa apasarea butonului de adaugare, o notificare cu un mesaj de succes 
+                                            sau de eroare va fi afisat.
                                         </li>
-                                        <li>
-                                            În
-                                            momentul
-                                            în care
-                                            adminul
-                                            modifica
-                                            o
-                                            întrebare
-                                            sau un
-                                            chestionar,
-                                            informațiile
-                                            despre
-                                            acestea
-                                            sunt
-                                            actualizate
-                                            în baza
-                                            de
-                                            date.
-                                        </li>
+                                        <li> Pentru stergerea unul nominalizat administratorul trebuie sa introduca 
+                                            id-ul nominalizatului si dupa apasarea butonului de stergere va aparea o 
+                                            notificare de succes sau insucces. </li>
+                                        <li> Pentru schimbarea parolei, administratorul trebuie sa isi completeze     
+                                            veche parola , cea noua si o confirmare a parolei noi.</li>
                                     </ul>
                                     <h5 id="administrator-3">4.3.3
                                         Condiții de
@@ -804,7 +708,7 @@
                                     are
                                     rolul de a
                                     deconecta
-                                    utilizatorul de
+                                    administratorul de
                                     pe
                                     cont și îl
                                     redirecționează
@@ -815,14 +719,7 @@
                                         informațiilor</h5>
                                     <ul>
                                         <li>
-                                            Tokenul
-                                            de
-                                            autentificare
-                                            este
-                                            eliminat,
-                                            prin
-                                            intermediul
-                                            JWT.
+                                            Odata cu apasarea butonului de logout, sesiune se va incheia.
                                         </li>
                                     </ul>
                                     <h5 id="logout-3">4.4.3
@@ -892,41 +789,14 @@
                                         Securizarea
                                         datelor</h4>
                                     <p>
-                                        Autorizarea
-                                        utilizatorilor
-                                        se face pe
-                                        baza
-                                        standardului
-                                        JWT.
                                         Utilizatorii
                                         au
                                         acces doar
                                         la
-                                        informații
-                                        legate
-                                        de progresul
-                                        in
-                                        cadrul
-                                        site-ului,
-                                        celelalte
-                                        informații
-                                        fiind
-                                        ascunse.
-                                        Token-ul
-                                        folosit
-                                        pentru
-                                        autorizare
-                                        este
-                                        stocat
-                                        intr-un
-                                        cookie de
-                                        tip
-                                        HTTP-only,
-                                        lucru
-                                        care previne
-                                        atacurile de
-                                        tip
-                                        XSS. Mai
+                                        toate informatiile de pe site fara a fi autentificati.
+                                        Administratorul trebuie sa fie logat pentru a modifica ceva si aceasta este o 
+                                        modalitate de a pastra in siguranta datele legate de SAG Awards.
+                                        Mai
                                         mult,
                                         toate
                                         datele sunt
