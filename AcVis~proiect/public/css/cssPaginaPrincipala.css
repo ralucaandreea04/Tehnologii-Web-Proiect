@@ -407,8 +407,8 @@ h3 {
 }
 
 .submenu {
-    max-height: 688.5px; /* Ajustați această valoare după cum este necesar */
-    overflow-y: auto; /* Permite derularea */
+    max-height: 688.5px;
+    overflow-y: auto;
     background-color: #ffffff;
 }
 
