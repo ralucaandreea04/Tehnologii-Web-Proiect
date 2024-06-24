@@ -530,7 +530,7 @@
                             <li id="home-page"><b> Statistici actor</b></li>
                             <li style="list-style: none">
                                 <ul>
-                                    <li>Statistica de tip bar chart, cat si cea cirle chart
+                                    <li>Statistica de tip bar chart, cat si cea circle chart
                                     permit vizualizarea numarului de nominalzari din fiecare an 
                                     ale actorului selectat.</li>
                                     <li class="pictures"
