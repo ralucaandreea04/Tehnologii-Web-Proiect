@@ -390,7 +390,7 @@
                                         style="list-style: none"><img
                                             alt="overview" src="Images-Documentation/homePage1.png"
                                             width=800> <img alt="overview"
-                                            src="homePage2.png" width=800>
+                                            src="Images-Documentation/homePage2.png" width=800>
                                     </li>
                                 </ul>
                             </li>
