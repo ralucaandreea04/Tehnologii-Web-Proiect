@@ -25,21 +25,20 @@ function searchMovieAndGetPoster($movie_name) {
         curl_close($c);
 
         if (!empty($data['results'])) {
-            $movie = $data['results'][0]; // Luăm primul rezultat (cel mai relevant)
+            $movie = $data['results'][0]; 
 
-            // Verificăm dacă există o cale pentru imaginea poster a filmului
             if (isset($movie['poster_path'])) {
                 $imageUrl = 'https://image.tmdb.org/t/p/w500' . $movie['poster_path'];
-                return $imageUrl; // Returnăm URL-ul imaginii poster
+                return $imageUrl;
             } else {
-                return ''; // În cazul în care nu există imagine de poster, returnăm un string gol
+                return '';
             }
         } else {
-            return ''; // În cazul în care nu există rezultate pentru filmul căutat, returnăm un string gol
+            return ''; 
         }
     } else {
         curl_close($c);
-        return ''; // În cazul în care apare o eroare la obținerea datelor, returnăm un string gol
+        return ''; 
     }
 }
 ?>
