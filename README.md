@@ -378,6 +378,22 @@
                         pe care le
                         oferă:
                         <ul>
+                            <li id="home-page"><b> Pagina de
+                                    acasă</b></li>
+                            <li style="list-style: none">
+                                <ul>
+                                    <li>Pagina are rolul de prezența
+                                        ultimele imagini de la SAG Awards și
+                                        vizualizarea ultimelor persoane
+                                        căutate.</li>
+                                    <li class="pictures"
+                                        style="list-style: none"><img
+                                            alt="overview" src="Images-Documentation/homePage1.png"
+                                            width=800> <img alt="overview"
+                                            src="homePage2.png" width=800>
+                                    </li>
+                                </ul>
+                            </li>
                             <li id="nav-bar"><b>Bara de
                                     navigație</b></li>
                             <li style="list-style: none">
@@ -410,23 +426,139 @@
                                     <li class="pictures"
                                         style="list-style: none"><img
                                             alt="login"
-                                            src="Images-Documentation/loginPoza.png" width=700>
+                                            src="Images-Documentation/loginPoza2.png" width=700>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="admin-page"><b> Pagina de
+                                    admin</b></li>
+                            <li style="list-style: none">
+                                <ul>
+                                    <li>Pagina este restricționată de secțiunea de 
+                                        login și oferă adminului funcționalități 
+                                        precum: adăugare nominalizare nouă, 
+                                        ștergere nominalizare, schimbare parolă 
+                                        și vizualizare înregistrări din baza de date.
+                                   </li>
+                                    <li class="pictures"
+                                        style="list-style: none"><img
+                                            alt="overview" src="Images-Documentation/paginaAdmin.png"
+                                            width=800> <img alt="overview"
+                                            src="paginaAdmin.png" width=800>
+                                    </li>
+                                </ul>
+                            </li>
+                             <li id="admin-page"><b> Statistică pagina admin</b></li>
+                            <li style="list-style: none">
+                                <ul>
+                                    <li>Chartul de tip radar arată numarul de 
+                                        nominalizati la SAG Awards din fiecare an.
+                                   </li>
+                                    <li class="pictures"
+                                        style="list-style: none"><img
+                                            alt="overview" src="Images-Documentation/statisticaAdmin.png"
+                                            width=800> <img alt="overview"
+                                            src="statisticaAdmin.png" width=800>
+                                    </li>
+                                </ul>
+                            </li>
+                             <li id="admin-page"><b>Export CSV </b></li>
+                            <li style="list-style: none">
+                                <ul>
+                                    <li>Se realizeaza prin apasarea butonului Export CSV.
+                                   </li>
+                                    <li class="pictures"
+                                        style="list-style: none"><img
+                                            alt="overview" src="Images-Documentation/CSVAdmin.png"
+                                            width=800> <img alt="overview"
+                                            src="CSVAdmin.png" width=800>
+                                    </li>
+                                </ul>
+                            </li>
+                             <li id="admin-page"><b>Export SVG</b></li>
+                            <li style="list-style: none">
+                                <ul>
+                                    <li>Se realizeaza prin apasarea butonului Export SVG.
+                                   </li>
+                                    <li class="pictures"
+                                        style="list-style: none"><img
+                                            alt="overview" src="Images-Documentation/SVGAdmin.png"
+                                            width=800> <img alt="overview"
+                                            src="SVGAdmin.png" width=800>
+                                    </li>
+                                </ul>
+                            </li>
+                            </li>
+                             <li id="admin-page"><b>Export WebP</b></li>
+                            <li style="list-style: none">
+                                <ul>
+                                    <li>Se realizeaza prin apasarea butonului Export WebP.
+                                   </li>
+                                    <li class="pictures"
+                                        style="list-style: none"><img
+                                            alt="overview" src="Images-Documentation/WebPAdmin.png"
+                                            width=800> <img alt="overview"
+                                            src="WebPAdmin.png" width=800>
                                     </li>
                                 </ul>
                             </li>
                             <li id="home-page"><b> Pagina de
-                                    acasă</b></li>
+                                    actor</b></li>
                             <li style="list-style: none">
                                 <ul>
-                                    <li>Pagina are rolul de prezența
-                                        ultimele imagini de la SAG Awards și
-                                        vizualizarea ultimelor persoane
-                                        căutate.</li>
+                                    <li>Pagina de actor are rolul de a prezenta 
+                                    informatii despre actorul selectat, filmele 
+                                    pentru care a fost nominalizat, 
+                                    ultimele stiri despre el si vizualizarea datelor
+                                    sub forma de charturi.</li>
                                     <li class="pictures"
                                         style="list-style: none"><img
-                                            alt="overview" src="Images-Documentation/homePage1.png"
+                                            alt="overview" src="Images-Documentation/paginaActor.png"
                                             width=800> <img alt="overview"
-                                            src="homePage2.png" width=800>
+                                            src="paginaActor.png" width=800>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="home-page"><b>Sectiuena de stiri</b></li>
+                            <li style="list-style: none">
+                                <ul>
+                                    <li>Stirile sunt preluate de pe un site extern pe care 
+                                    te redirectioneaza butonul Read more.</li>
+                                    <li class="pictures"
+                                        style="list-style: none"><img
+                                            alt="overview" src="Images-Documentation/stireActor.png"
+                                            width=800> <img alt="overview"
+                                            src="stireActor.png" width=800>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="home-page"><b> Statistici actor</b></li>
+                            <li style="list-style: none">
+                                <ul>
+                                    <li>Statistica de tip bar chart, cat si cea cirle chart
+                                    permit vizualizarea numarului de nominalzari din fiecare an 
+                                    ale actorului selectat.</li>
+                                    <li class="pictures"
+                                        style="list-style: none"><img
+                                            alt="overview" src="Images-Documentation/statisticaActor.png"
+                                            width=800> <img alt="overview"
+                                            src="statisticaActor.png" width=800>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="home-page"><b> Pagina de
+                                    film</b></li>
+                            <li style="list-style: none">
+                                <ul>
+                                    <li>Pagina are rolul de a prezenta
+                                        premiile pentru care au fost nominalizati
+                                        actorii la SAG Awards datorita performantei in
+                                    filmul selectat.</li>
+                                    <li class="pictures"
+                                        style="list-style: none"><img
+                                            alt="overview" src="Images-Documentation/paginaFilm.png"
+                                            width=800> <img alt="overview"
+                                            src="paginaFilm.png" width=800>
                                     </li>
                                 </ul>
                             </li>
