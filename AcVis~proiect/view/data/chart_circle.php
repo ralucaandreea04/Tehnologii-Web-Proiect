@@ -44,13 +44,13 @@ function generateChartCircle($actor_name) {
 
                 var ctx = document.getElementById('myChartCircle').getContext('2d');
                 var myChart = new Chart(ctx, {
-                    type: 'doughnut', // Tipul diagramă circulară
+                    type: 'doughnut', 
                     data: {
                         labels: labels,
                         datasets: [{
                             label: 'Număr nominalizări pentru $actor_name',
                             data: data,
-                            backgroundColor: backgroundColors, // Culori pentru fiecare segment
+                            backgroundColor: backgroundColors, 
                             borderColor: '#ffffff',
                             borderWidth: 1
                         }]
@@ -60,8 +60,8 @@ function generateChartCircle($actor_name) {
                         responsive: true,
                         plugins: {
                             legend: {
-                                position: 'top', // Poziția legendei
-                                maxLines: 2, // Numărul maxim de linii pentru legenda
+                                position: 'top',
+                                maxLines: 2,
                             },
                             tooltip: {
                                 callbacks: {
