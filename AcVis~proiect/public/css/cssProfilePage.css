@@ -108,8 +108,8 @@ body {
 }
 
 .table-wrapper {
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Add padding around the table */
-    max-width: 100%; /* Ensure it doesn't overflow */
-    overflow: auto; /* Enable scrolling if content overflows */
+    margin: 0 auto; 
+    padding: 20px;
+    max-width: 100%;
+    overflow: auto; 
 }
