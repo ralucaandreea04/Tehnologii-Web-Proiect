@@ -5,14 +5,9 @@ $conn = get_db_connection();
 $table = "utilizatori";
 
 
-function generateToken() {
-    return bin2hex(random_bytes(16)); 
-}
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
-    $rememberMe = isset($_POST['rememberMe']);
 
     $stmt = $conn->prepare("SELECT id, name, email FROM $table WHERE email = ? AND password = ?");
     $stmt->bind_param("ss", $email, $password);
@@ -26,11 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['loggedin'] = true;
         $_SESSION['name'] = $name;
         $_SESSION['email'] = $email;
-
-        if ($rememberMe) {
-            $token = generateToken();
-            setcookie('remember_token', $token, time() + (86400 * 30), "/");
-        }
 
         header("Location: /AcVis~proiect/public/adminpage");
         exit;
