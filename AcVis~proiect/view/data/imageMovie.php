@@ -1,7 +1,6 @@
 <?php
 define('API_KEY', '7c12d7e0b5fcb20bf6adaf6cc72e6224');
 
-// Funcție pentru a căuta informații despre un film și a genera URL-ul imaginii poster
 function searchMovieAndGetPoster($movie_name) {
     $url = 'https://api.themoviedb.org/3/search/movie?api_key=' . API_KEY . '&query=' . urlencode($movie_name);
 
