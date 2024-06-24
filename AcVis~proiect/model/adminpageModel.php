@@ -1,18 +1,9 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "Raluca.andreea123";
-$dbname = "tehnologii_web";
-$table = "screen_actor_guild_awards";
-$port = 3306;
+require_once __DIR__.'/../db.php';
 
 function addRecord($id, $year, $category, $full_name, $show, $won) {
-    global $servername, $username, $password, $dbname, $port, $table;
-
-    $conn = new mysqli($servername, $username, $password, $dbname, $port);
-    if ($conn->connect_error) {
-        return json_encode(array("status" => "error", "message" => "Connection failed: " . $conn->connect_error));
-    }
+    $conn = get_db_connection();
+    $table = "screen_actor_guild_awards";
 
     $sql_insert = "INSERT INTO `$table` (id, year, category, full_name, `show`, won) VALUES (?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql_insert);
@@ -30,12 +21,8 @@ function addRecord($id, $year, $category, $full_name, $show, $won) {
 }
 
 function deleteRecord($delete_id) {
-    global $servername, $username, $password, $dbname, $port, $table;
-
-    $conn = new mysqli($servername, $username, $password, $dbname, $port);
-    if ($conn->connect_error) {
-        return json_encode(array("status" => "error", "message" => "Connection failed: " . $conn->connect_error));
-    }
+    $conn = get_db_connection();
+    $table = "screen_actor_guild_awards";
 
     $sql_delete = "DELETE FROM `$table` WHERE id = ?";
     $stmt = $conn->prepare($sql_delete);
@@ -53,12 +40,8 @@ function deleteRecord($delete_id) {
 }
 
 function changePassword($user_name, $new_password, $confirm_password, $current_password) {
-    global $servername, $username, $password, $dbname, $port;
-
-    $conn = new mysqli($servername, $username, $password, $dbname, $port);
-    if ($conn->connect_error) {
-        return json_encode(array("status" => "error", "message" => "Connection failed: " . $conn->connect_error));
-    }
+    $conn = get_db_connection();
+    $table = "screen_actor_guild_awards";
     $user_name = $_SESSION['name'];
   
     $sql_select = "SELECT password FROM utilizatori WHERE name = ?";

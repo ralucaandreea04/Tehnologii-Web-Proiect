@@ -1,18 +1,9 @@
 <?php
+require_once __DIR__.'/../db.php';
 session_start();
-
-$servername = "localhost";
-$username = "root";
-$password = "Raluca.andreea123";
-$dbname = "tehnologii_web";
+$conn = get_db_connection();
 $table = "utilizatori";
-$port = 3306;
 
-$conn = new mysqli($servername, $username, $password, $dbname, $port);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 function generateToken() {
     return bin2hex(random_bytes(16)); 
