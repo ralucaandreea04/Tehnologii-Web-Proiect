@@ -443,8 +443,7 @@
                                     <li class="pictures"
                                         style="list-style: none"><img
                                             alt="overview" src="Images-Documentation/paginaAdmin.png"
-                                            width=800> <img alt="overview"
-                                            src="paginaAdmin.png" width=800>
+                                            width=800> 
                                     </li>
                                 </ul>
                             </li>
@@ -457,8 +456,7 @@
                                     <li class="pictures"
                                         style="list-style: none"><img
                                             alt="overview" src="Images-Documentation/statisticaAdmin.png"
-                                            width=800> <img alt="overview"
-                                            src="statisticaAdmin.png" width=800>
+                                            width=800> 
                                     </li>
                                 </ul>
                             </li>
@@ -470,8 +468,7 @@
                                     <li class="pictures"
                                         style="list-style: none"><img
                                             alt="overview" src="Images-Documentation/CSVAdmin.png"
-                                            width=800> <img alt="overview"
-                                            src="CSVAdmin.png" width=800>
+                                            width=800> 
                                     </li>
                                 </ul>
                             </li>
@@ -483,8 +480,7 @@
                                     <li class="pictures"
                                         style="list-style: none"><img
                                             alt="overview" src="Images-Documentation/SVGAdmin.png"
-                                            width=800> <img alt="overview"
-                                            src="SVGAdmin.png" width=800>
+                                            width=800> 
                                     </li>
                                 </ul>
                             </li>
@@ -497,8 +493,7 @@
                                     <li class="pictures"
                                         style="list-style: none"><img
                                             alt="overview" src="Images-Documentation/WebPAdmin.png"
-                                            width=800> <img alt="overview"
-                                            src="WebPAdmin.png" width=800>
+                                            width=800> 
                                     </li>
                                 </ul>
                             </li>
@@ -514,12 +509,11 @@
                                     <li class="pictures"
                                         style="list-style: none"><img
                                             alt="overview" src="Images-Documentation/paginaActor.png"
-                                            width=800> <img alt="overview"
-                                            src="paginaActor.png" width=800>
+                                            width=800> 
                                     </li>
                                 </ul>
                             </li>
-                            <li id="home-page"><b>Sectiuena de stiri</b></li>
+                            <li id="home-page"><b>Secțiunea de stiri</b></li>
                             <li style="list-style: none">
                                 <ul>
                                     <li>Stirile sunt preluate de pe un site extern pe care 
@@ -527,8 +521,7 @@
                                     <li class="pictures"
                                         style="list-style: none"><img
                                             alt="overview" src="Images-Documentation/stireActor.png"
-                                            width=800> <img alt="overview"
-                                            src="stireActor.png" width=800>
+                                            width=800> 
                                     </li>
                                 </ul>
                             </li>
@@ -541,8 +534,7 @@
                                     <li class="pictures"
                                         style="list-style: none"><img
                                             alt="overview" src="Images-Documentation/statisticaActor.png"
-                                            width=800> <img alt="overview"
-                                            src="statisticaActor.png" width=800>
+                                            width=800> 
                                     </li>
                                 </ul>
                             </li>
@@ -557,8 +549,7 @@
                                     <li class="pictures"
                                         style="list-style: none"><img
                                             alt="overview" src="Images-Documentation/paginaFilm.png"
-                                            width=800> <img alt="overview"
-                                            src="paginaFilm.png" width=800>
+                                            width=800> 
                                     </li>
                                 </ul>
                             </li>
