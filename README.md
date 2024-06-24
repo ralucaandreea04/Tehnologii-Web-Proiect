@@ -538,6 +538,26 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li id="home-page"><b> Export bar chart</b></li>
+                            <li style="list-style: none">
+                                <ul>
+                                    <li class="pictures"
+                                        style="list-style: none"><img
+                                            alt="overview" src="Images-Documentation/export1.png"
+                                            width=800> 
+                                    </li>
+                                </ul>
+                            </li>
+                             <li id="home-page"><b> Export circle chart</b></li>
+                            <li style="list-style: none">
+                                <ul>
+                                    <li class="pictures"
+                                        style="list-style: none"><img
+                                            alt="overview" src="Images-Documentation/export2.png"
+                                            width=800> 
+                                    </li>
+                                </ul>
+                            </li>
                             <li id="home-page"><b> Pagina de
                                     film</b></li>
                             <li style="list-style: none">
