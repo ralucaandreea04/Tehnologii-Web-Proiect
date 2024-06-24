@@ -29,10 +29,10 @@
             cursor: pointer;
             font-size: 16px;
             border-radius: 5px;
-            text-decoration: none; /* Elimină sublinierea textului */
+            text-decoration: none; 
         }
         .back-button:hover {
-            background-color: #b38f00; /* Schimbare culoare hover */
+            background-color: #b38f00; 
         }
     </style>
 </head>
