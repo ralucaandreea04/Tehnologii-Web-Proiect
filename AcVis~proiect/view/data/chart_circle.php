@@ -28,10 +28,8 @@ function generateChartCircle($actor_name) {
 
     $conn->close();
 
-    // Define an array of colors
     $colors = ['#4CAF50', '#FFC107', '#2196F3', '#E91E63', '#9C27B0', '#FF5722', '#673AB7', '#3F51B5', '#FFEB3B', '#00BCD4', '#8BC34A', '#FF9800'];
 
-    // Generate the chart JavaScript
     return [
         'labels' => $labels,
         'data' => $data,
